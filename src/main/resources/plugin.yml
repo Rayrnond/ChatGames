@@ -1,0 +1,13 @@
+name: ChatGames
+version: ${project.version}
+main: com.reflexian.chatgames.ChatGames
+softdepend: [PlaceholderAPI, TitleAPI]
+author: Raymond#0001
+website: Reflexian.com
+commands:
+  cg:
+    description: Reload command for Chat Games
+    usage: /<command>
+  quickmaths:
+    description: The quickmaths command that shows a math problem and the first players to answer win!
+    usage: /<command>

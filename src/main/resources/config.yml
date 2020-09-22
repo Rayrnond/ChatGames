@@ -1,0 +1,101 @@
+########################################################################################
+#
+#
+# ░█▀▀█ █──█ █▀▀█ ▀▀█▀▀ 　 ░█▀▀█ █▀▀█ █▀▄▀█ █▀▀ █▀▀
+# ░█─── █▀▀█ █▄▄█ ──█── 　 ░█─▄▄ █▄▄█ █─▀─█ █▀▀ ▀▀█
+# ░█▄▄█ ▀──▀ ▀──▀ ──▀── 　 ░█▄▄█ ▀──▀ ▀───▀ ▀▀▀ ▀▀▀
+#
+#
+########################################################################################
+##
+##   Welcome to Chat Games configuration files!
+## I see you want to change some settings, right?
+## Well just so you know, if you mess with a setting, and the
+## plugin breaks, it's NOT my fault.
+##
+## For any configuration assistance please private message
+## MegaGamer2223 on Spigot, or contact me in Discord: Raymond#0001
+##
+##
+##   Useful links:
+##
+##       1. Hypixel Chat Games github:
+##          Free --> https://github.com/Rayrnond/chatgames
+##
+##       2. Support Discord server (quick live support, bug reports, etc):
+##          --> https://discord.reflexian.com
+##
+##   With love, Raymond from Reflexian.
+##   © Reflexian, 2018-2020.
+##
+########################################################################################
+
+main-commands:
+
+  # The permission needed to use /hcg reload
+  reload-permission: "hcg.reload"
+
+quickmaths:
+
+  # Permission to use /quickmaths
+  command-permission: "quickmaths.use"
+  # Permission to use /quickmaths (args)
+  command-permission-multi: "quickmaths.use.multi"
+
+  enable-player-amount: false # Should the number of players allowed to answer be affected by (onlineplayers - 3) ?
+  default-timer: 30 # seconds | How long quickmaths lasts if it doesn't reach its player number
+
+  show-titles: true # Should the title be showed for everyone online? (See wiki for more details)
+  titles: # The titles shown to all players when /quickmaths is used.    MUST BE SAME # OF TITLES AS SUBTITLES !!!
+    - "&d&lQUICKMATHS"
+    - "&d&lQUICKMATHS"
+    - "&d&lQUICKMATHS"
+    - "&f&lQ&d&lUICKMATHS"
+    - "&d&lQ&f&lU&d&lICKMATHS"
+    - "&d&lQU&f&lI&d&lCKMATHS"
+    - "&d&lQUI&f&lC&d&lKMATHS"
+    - "&d&lQUIC&f&lK&d&lMATHS"
+    - "&d&lQUICK&f&lM&d&lATHS"
+    - "&d&lQUICKM&f&lA&d&lTHS"
+    - "&d&lQUICKMA&f&lT&d&lHS"
+    - "&d&lQUICKMAT&f&lH&d&lS"
+    - "&d&lQUICKMATH&f&lS"
+    - "&d&lQUICKMATHS"
+    - "&d&lQUICKMATHS"
+    - "&d&lQUICKMATHS"
+  subtitles: # The subtitles shown to all players when /quickmaths is used. MUST BE SAME # OF SUBTITLES AS TITLES !!!
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+    - "&eCheck chat for problem!"
+  delay: 2 # The delay between title & subtitles messages, in ms.   <NOTE> Anything above 8 may cause issues
+
+  default-min: 1 # The default minimum number. Ex. Min = 1 and Max = 5 the number would be 1 - 5
+  default-max: 100
+
+  # These commands will execute when a player is correct, wrong or the event ends.
+  # Don't want any commands? Remove all commands and put null! Example: - null
+
+  correct-commands: # The commands executed when a player answers correctly. %player% is player. Executed by console.
+    - "say %player% got it right! Their place was %place%!!"
+    - "say change this message in the config!!"
+  wrong-commands: # The commands executed when a player answers wrongly. %player% is player. Executed by console.
+    - "say %player% got it wrong!"
+    - "say change this message in the config!!!"
+  ended-commands: # The commands executed when the QuickMaths event ends. Executed by console.
+    - "say quickmaths ended!!!"
+    - "say change this message in the config!!!"
